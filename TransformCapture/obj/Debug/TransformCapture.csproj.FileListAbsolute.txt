@@ -1,0 +1,11 @@
+D:\Visual Studio Project\TransformCapture\TransformCapture\bin\Debug\TransformCapture.exe.config
+D:\Visual Studio Project\TransformCapture\TransformCapture\bin\Debug\TransformCapture.exe
+D:\Visual Studio Project\TransformCapture\TransformCapture\bin\Debug\TransformCapture.pdb
+D:\Visual Studio Project\TransformCapture\TransformCapture\obj\Debug\TransformCapture.csprojResolveAssemblyReference.cache
+D:\Visual Studio Project\TransformCapture\TransformCapture\obj\Debug\TransformCapture.Form1.resources
+D:\Visual Studio Project\TransformCapture\TransformCapture\obj\Debug\TransformCapture.FullScreen.resources
+D:\Visual Studio Project\TransformCapture\TransformCapture\obj\Debug\TransformCapture.Properties.Resources.resources
+D:\Visual Studio Project\TransformCapture\TransformCapture\obj\Debug\TransformCapture.csproj.GenerateResource.Cache
+D:\Visual Studio Project\TransformCapture\TransformCapture\obj\Debug\TransformCapture.exe
+D:\Visual Studio Project\TransformCapture\TransformCapture\obj\Debug\TransformCapture.pdb
+D:\Visual Studio Project\TransformCapture\TransformCapture\obj\Debug\TransformCapture.Result.resources
