@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
+using System.Threading;
 
 namespace TransformCapture
 {
@@ -26,6 +27,11 @@ namespace TransformCapture
 		private void Result_Load(object sender, EventArgs e)
 		{
 			this.Location = new Point(0, 0);
+		}
+
+		public void transform()
+		{
+			dotransform();
 		}
 
 		public void dotransform()

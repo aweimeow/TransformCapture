@@ -32,7 +32,6 @@
 			this.MS = new System.Windows.Forms.MenuStrip();
 			this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.MSI_save = new System.Windows.Forms.ToolStripMenuItem();
-			this.exutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			((System.ComponentModel.ISupportInitialize)(this.PB_res)).BeginInit();
 			this.MS.SuspendLayout();
@@ -50,7 +49,6 @@
 			// 
 			this.MS.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.exutToolStripMenuItem,
             this.exitToolStripMenuItem});
 			this.MS.Location = new System.Drawing.Point(0, 0);
 			this.MS.Name = "MS";
@@ -69,14 +67,9 @@
 			// MSI_save
 			// 
 			this.MSI_save.Name = "MSI_save";
-			this.MSI_save.Size = new System.Drawing.Size(198, 28);
+			this.MSI_save.Size = new System.Drawing.Size(119, 28);
 			this.MSI_save.Text = "Save";
 			this.MSI_save.Click += new System.EventHandler(this.MSI_save_Click);
-			// 
-			// exutToolStripMenuItem
-			// 
-			this.exutToolStripMenuItem.Name = "exutToolStripMenuItem";
-			this.exutToolStripMenuItem.Size = new System.Drawing.Size(12, 28);
 			// 
 			// exitToolStripMenuItem
 			// 
@@ -110,7 +103,6 @@
 		public System.Windows.Forms.MenuStrip MS;
 		private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem MSI_save;
-		private System.Windows.Forms.ToolStripMenuItem exutToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
 
 	}

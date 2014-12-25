@@ -36,12 +36,14 @@
 			// 
 			// PB_FS
 			// 
+			this.PB_FS.BackColor = System.Drawing.Color.Transparent;
 			this.PB_FS.Location = new System.Drawing.Point(36, 28);
 			this.PB_FS.Name = "PB_FS";
 			this.PB_FS.Size = new System.Drawing.Size(299, 121);
 			this.PB_FS.TabIndex = 0;
 			this.PB_FS.TabStop = false;
 			this.PB_FS.Click += new System.EventHandler(this.PB_FS_Click);
+			this.PB_FS.Paint += new System.Windows.Forms.PaintEventHandler(this.PB_FS_Paint);
 			this.PB_FS.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PB_FS_MouseMove);
 			// 
 			// Timer_sleep

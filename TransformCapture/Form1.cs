@@ -46,7 +46,9 @@ namespace TransformCapture
 			try
 			{
 				savedImage = myImage;
-				FS.PB_FS.Image = myImage;
+				FS.BackgroundImage = myImage;
+				FS.ClickTime = -1;
+				FS.PB_FS.BackColor = Color.Transparent;
 				FS.savedImage = myImage;
 			}
 			catch

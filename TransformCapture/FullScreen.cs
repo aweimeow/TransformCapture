@@ -20,7 +20,7 @@ namespace TransformCapture
 		private Boolean first = false;
 		private int count = 0;	//Count for the Timer, Check for great FS image
 		private Point[] pos = new Point[4];	//Point array to save 4 position
-		private int ClickTime = -1;	//Make sure there is only 4 position
+		public int ClickTime = -1;	//Make sure there is only 4 position
 
 		public FullScreen()
 		{
@@ -30,7 +30,6 @@ namespace TransformCapture
 		// if mouse move, call DrawLine
 		private void PB_FS_MouseMove(object sender, MouseEventArgs e)
 		{
-			
 			if(first)
 			{
 				if (lastPoint.X >= 0)
@@ -74,11 +73,11 @@ namespace TransformCapture
 			MouseEventArgs me = (MouseEventArgs)e;
 			ClickTime++;
 			pos[ClickTime] = me.Location;
+			PB_FS.Invalidate();
 			if(ClickTime == 3)
 			{
-				ClickTime = -1;
 				ActivateResForm();
-				this.Close();
+				//this.Close();
 			}
 		}
 
@@ -100,7 +99,7 @@ namespace TransformCapture
 				Res.WindowState = FormWindowState.Normal;
 				Rectangle r = new Rectangle(startx, starty, maxwidth(pos), maxheight(pos));
 				Res.Width = r.Width;
-				Res.Height =r.Height+Res.MS.Height;
+				Res.Height =r.Height+65;
 				Res.Location = new Point((int)(Screen.PrimaryScreen.Bounds.Height * 0.2), (int)(Screen.PrimaryScreen.Bounds.Height * 0.2));
 				Res.oimage = CutImage(savedImage, r);
 				Res.PB_res.Width = r.Width;
@@ -112,7 +111,7 @@ namespace TransformCapture
 					Res.pos[i].X = pos[i].X - startx;
 					Res.pos[i].Y = pos[i].Y - starty;
 				}
-					Res.dotransform();
+					Res.transform();
 			}
 		}
 		
@@ -170,6 +169,22 @@ namespace TransformCapture
 			}
 			return startY;
 		}
-
+		
+		private void PB_FS_Paint(object sender, PaintEventArgs e)
+		{
+			Pen p = new Pen(Color.Red);
+			if(ClickTime>0)
+			{
+				for(int i = 0; i<ClickTime; i++)
+				{
+					e.Graphics.DrawLine(p, pos[i], pos[i+1]);
+				}
+			}
+			if(ClickTime==3)
+			{
+				var m = MessageBox.Show("!!");
+				e.Graphics.DrawLine(p, pos[0], pos[3]);
+			}
+		}
 	}
 }
